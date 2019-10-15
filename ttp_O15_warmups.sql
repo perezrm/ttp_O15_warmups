@@ -1,6 +1,7 @@
+/* 
 --Which are the 10 longest R rated movies?
 
-       title        | length 
+	       title        | length 
 --------------------+--------
  Home Pity          |    185
  Sweet Brotherhood  |    185
@@ -21,6 +22,8 @@ WHERE film.rating = 'R'
 ORDER BY 2 DESC
 LIMIT 10;
 
+
+/*
 -- What are the NEXT 10 longest R rated movies?
 -- hint: google "how to get next 10 records in sql"
 
@@ -55,13 +58,12 @@ WHERE film.rating = 'R'
 ORDER BY 2 DESC
 LIMIT 20;
 
+
+/*
 --How many films are as long as the longest film?
 -- RETURN an exact number
 
-SELECT title, COUNT(length)
-FROM film.length
-GROUP BY 2
-ORDER BY 2 DESC;
+
 
 --Which are the 10 longest R rated movies, SORTED IN ALPHABETICAL ORDER?
 -- hint: might need a subquery
@@ -70,6 +72,37 @@ ORDER BY 2 DESC;
 --Which are the 10 kids films with the longest description?
 -- G, PG, PG-13
 --hint: google "SQL count length of string"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 -- How many unique release_years are there in the dvd rental database?
